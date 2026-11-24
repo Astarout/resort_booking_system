@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.not-smooth {
+    scroll-behavior: auto;
+}
+
+@layer base {
+    [x-cloak] {
+        display: none !important;
+    }
+}
+
+.flatpickr-day.reserved-date {
+    color: #ef4444 !important;
+    background: #fee2e2 !important;
+    cursor: not-allowed !important;
+    opacity: 1 !important;
+}
+
+.fully-booked-date {
+    color: #ef4444 !important;
+    background: #fee2e2 !important;
+    cursor: not-allowed !important;
+    opacity: 1 !important;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+    background: #d1d5db;
+    border-radius: 10px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #6b7280;
+    border-radius: 10px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: #4b5563;
+}
+
+.scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #6b7280 #d1d5db;
+}
